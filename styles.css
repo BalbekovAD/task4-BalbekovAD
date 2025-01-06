@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+}
+
+.Content {
+    width: 1140px;
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 24px 0;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-button {
+    /*height: 48px;*/
+    padding: 16px 20px;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    color: #363E45;
+    border: 1px solid #98A3AE7A;
+    background-color: white;
+}
+
+a.nav-button {
+    text-decoration: none;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1;
+}
+
+.column-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.column-item > .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date-text {
+    line-height: 1.5rem;
+    color: #363E45;
+}
+
+#screen2 > h1 {
+    line-height: 3.625rem;
+}
+
+#screen2 > img {
+    width: 100%; /* Make the image width responsive */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    aspect-ratio: 1140/400;
+    max-width: 1140px;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#screen3 > .content {
+    display: flex;
+    gap: 32px;
+}
+
+#screen4 > .content {
+    display: flex;
+    gap: 32px;
+}
+
+p:first-of-type {
+    margin-block: 0;
+}
+
+#screen5 > .content { /**/
+    display: flex;
+    gap: 32px;
+    padding: 16px 0;
+    flex-direction: column;
+}
+
+.skill-view {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+hr {
+    height: 8px;
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #363E45;
+}
+
+.skill-progress {
+    height: 8px;
+    border-radius: 4px;
+    background: #98A3AE1F;
+}
+
+#screen6 > .content {
+    display: flex;
+    gap: 32px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#screen6 > .content > .contact-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 336px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: #98A3AE1F;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.icons {
+    display: flex;
+    gap: 32px;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    /*color: #363E45A3;*/
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    margin-block: 0;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #363E45;
+}
+
+h2 {
+    margin-block: 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #363E45;
+}
+
+h3 {
+    margin-block: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introverted-bar {
+    width: 81%;
+    background: #4298b4;
+}
+
+.intuitive-bar {
+    width: 26%;
+    background: #e4ae3a;
+}
+
+.thinking-bar {
+    width: 29%;
+    background: #33a474;
+}
+
+.prospecting-bar {
+    width: 75%;
+    background: #88619a;
+}
+
+.turbulent-bar {
+    width: 51%;
+    background: #f25e62;
+}
+
+.title > span {
+    margin-block: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #363E45;
+}
+
+@media screen and (max-width: 1140px) {
+    .Content {
+        width: auto;
+    }
+
+    #screen1 {
+        display: none;
+    }
+
+    #screen3 > .content > .content-column:last-child {
+        display: none;
+    }
+
+    #screen6 > .content {
+        flex-direction: column;
+    }
+}

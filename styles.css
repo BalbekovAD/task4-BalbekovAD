@@ -248,6 +248,11 @@ h3 {
     color: #363E45;
 }
 
+h3 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1140px) {
     .Content {
         width: auto;
